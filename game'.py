@@ -59,12 +59,12 @@ car_image = pygame.image.load('car_128.png').convert_alpha()
 black_car = CarSprite(car_image, WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2)
 car_sprites = pygame.sprite.Group()
 car_sprites.add(black_car)
-pygame.mixer.music.load("car_sim/Dschinghis_Khan_-_Moskau_48138405.mp3")
+pygame.mixer.music.load("Dschinghis_Khan_-_Moskau_48138405.mp3")
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.3)
-r = pygame.mixer.Sound('car_sim/long_crash_type_tire_skid.mp3')
-rr = pygame.mixer.Sound('car_sim/car-turn-signals_m1s1lseo.mp3')
-rrrr = pygame.mixer.Sound('car_sim/sports-car-muffler_z1mdjme_.mp3')
+r = pygame.mixer.Sound('long_crash_type_tire_skid.mp3')
+rr = pygame.mixer.Sound('car-turn-signals_m1s1lseo.mp3')
+rrrr = pygame.mixer.Sound('sports-car-muffler_z1mdjme_.mp3')
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
