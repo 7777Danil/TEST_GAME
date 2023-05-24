@@ -88,6 +88,9 @@ while running:
                 print("fffff")
                 black_car.brake()
                 r.play()
+             elif event.type == KEYUP and event.key == K_ESCAPE:
+                road_image = pygame.image.load('ASF.jpg')
+                background = pygame.transform.smoothscale(road_image, (WINDOW_WIDTH, WINDOW_HEIGHT)) 
 
 
 
